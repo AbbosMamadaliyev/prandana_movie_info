@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "277704476379",
+    "project_id": "prandana-movie-info",
+    "storage_bucket": "prandana-movie-info.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277704476379:android:4b065cd4b1ca8179aeeefe",
+        "android_client_info": {
+          "package_name": "com.uz.m.abbos.prandana_movie_info"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277704476379-p9fd33jboh33s3ap0fts1ib506h6m0ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYpImejmI4aDrrwNP2zMnvVbXJLyTiFys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277704476379-p9fd33jboh33s3ap0fts1ib506h6m0ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
