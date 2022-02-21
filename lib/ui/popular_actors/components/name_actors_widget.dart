@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/popular_actors/popular_actors.dart';
 import 'package:prandana_movie_info/ui/popular_actors/components/popularity_widget.dart';
+import 'package:prandana_movie_info/view_models/popular_actors/popular_actors.dart';
 import 'package:provider/src/provider.dart';
 
 class NameActorsWidget extends StatelessWidget {

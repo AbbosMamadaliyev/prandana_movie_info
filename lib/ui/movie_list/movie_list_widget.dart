@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/api_client/api_client.dart';
-import 'package:prandana_movie_info/services/credits_provider/movie_list_provider.dart';
-import 'package:prandana_movie_info/services/keywords_movies/keywords_movies.dart';
-import 'package:prandana_movie_info/services/movie_deails_provider/movie_details_provider.dart';
-import 'package:prandana_movie_info/services/movie_list_provider/movie_list_provider.dart';
-import 'package:prandana_movie_info/services/videos_provider/videos_provider.dart';
+import 'package:prandana_movie_info/domain/dataproviders/api_client/api_client.dart';
 import 'package:prandana_movie_info/ui/movie_list/components/title_and_realese_widget.dart';
+import 'package:prandana_movie_info/view_models/credits_provider/movie_list_provider.dart';
+import 'package:prandana_movie_info/view_models/keywords_movies/keywords_movies.dart';
+import 'package:prandana_movie_info/view_models/movie_deails_provider/movie_details_provider.dart';
+import 'package:prandana_movie_info/view_models/movie_list_provider/movie_list_provider.dart';
+import 'package:prandana_movie_info/view_models/videos_provider/videos_provider.dart';
 import 'package:provider/src/provider.dart';
 
 import '../../main_navigation.dart';

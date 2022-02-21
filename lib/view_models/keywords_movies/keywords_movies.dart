@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:prandana_movie_info/models/keywords.dart';
-import 'package:prandana_movie_info/services/api_client/api_client.dart';
+import 'package:prandana_movie_info/domain/dataproviders/api_client/api_client.dart';
+import 'package:prandana_movie_info/domain/models/keywords.dart';
 
 class KeywordsProvider extends ChangeNotifier {
   final _apiClient = ApiClient();

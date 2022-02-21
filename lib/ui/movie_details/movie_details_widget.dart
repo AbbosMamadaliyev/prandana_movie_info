@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/movie_deails_provider/movie_details_provider.dart';
+import 'package:prandana_movie_info/view_models/movie_deails_provider/movie_details_provider.dart';
 import 'package:provider/src/provider.dart';
 
 import 'movie_details_main_info_widget.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/auth_provider/signup_provider.dart';
+import 'package:prandana_movie_info/view_models/auth_provider/signup_provider.dart';
 import 'package:provider/provider.dart';
 
 class ErrorText extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/api_client/api_client.dart';
-import 'package:prandana_movie_info/services/popular_actors/popular_actors.dart';
+import 'package:prandana_movie_info/domain/dataproviders/api_client/api_client.dart';
 import 'package:prandana_movie_info/ui/popular_actors/components/name_actors_widget.dart';
 import 'package:prandana_movie_info/ui/popular_actors/components/search_actor_widget.dart';
+import 'package:prandana_movie_info/view_models/popular_actors/popular_actors.dart';
 import 'package:provider/src/provider.dart';
 
 import '../../main_navigation.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:prandana_movie_info/models/movie_details.dart';
-import 'package:prandana_movie_info/services/api_client/api_client.dart';
+import 'package:prandana_movie_info/domain/dataproviders/api_client/api_client.dart';
+import 'package:prandana_movie_info/domain/models/movie_details.dart';
 
 class MovieDetailsProvider extends ChangeNotifier {
   final _apiClient = ApiClient();

@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
-import 'package:prandana_movie_info/models/credits.dart';
-import 'package:prandana_movie_info/services/api_client/api_client.dart';
+import 'package:prandana_movie_info/domain/dataproviders/api_client/api_client.dart';
+import 'package:prandana_movie_info/domain/models/credits.dart';
 
 class CreditsProvider extends ChangeNotifier {
   final _apiClient = ApiClient();

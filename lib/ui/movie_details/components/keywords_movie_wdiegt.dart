@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/keywords_movies/keywords_movies.dart';
+import 'package:prandana_movie_info/view_models/keywords_movies/keywords_movies.dart';
 import 'package:provider/src/provider.dart';
 
 class KeyWordsMovieWidget extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/movie_list_provider/movie_list_provider.dart';
+import 'package:prandana_movie_info/view_models/movie_list_provider/movie_list_provider.dart';
 import 'package:provider/src/provider.dart';
 
 class RaitingStarWidget extends StatelessWidget {

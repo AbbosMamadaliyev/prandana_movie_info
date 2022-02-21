@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/movie_list_provider/movie_list_provider.dart';
 import 'package:prandana_movie_info/ui/movie_list/components/raiting_star_widget.dart';
+import 'package:prandana_movie_info/view_models/movie_list_provider/movie_list_provider.dart';
 import 'package:provider/src/provider.dart';
 
 class TitleAndRealeseWidget extends StatelessWidget {

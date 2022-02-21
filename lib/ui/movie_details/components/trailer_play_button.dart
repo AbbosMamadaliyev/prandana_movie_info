@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/videos_provider/videos_provider.dart';
 import 'package:prandana_movie_info/ui/watch_video_trailer/watch_video_trailer.dart';
+import 'package:prandana_movie_info/view_models/videos_provider/videos_provider.dart';
 import 'package:provider/src/provider.dart';
 
 class ShowTrailerBtn extends StatelessWidget {

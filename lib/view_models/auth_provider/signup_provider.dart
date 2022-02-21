@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:prandana_movie_info/domain/dataproviders/auth_service/auth_service.dart';
+import 'package:prandana_movie_info/domain/models/user.dart';
 import 'package:prandana_movie_info/main_navigation.dart';
-import 'package:prandana_movie_info/models/user.dart';
-import 'package:prandana_movie_info/services/auth_service/auth_service.dart';
 
 class SignUpProvider extends ChangeNotifier {
   final _authService = AuthService();

@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/api_client/api_client.dart';
-import 'package:prandana_movie_info/services/credits_provider/movie_list_provider.dart';
+import 'package:prandana_movie_info/domain/dataproviders/api_client/api_client.dart';
+import 'package:prandana_movie_info/view_models/credits_provider/movie_list_provider.dart';
 import 'package:provider/src/provider.dart';
 
 import 'components/custom_card_sctor_widget.dart';

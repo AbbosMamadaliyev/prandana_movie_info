@@ -1,12 +1,12 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:prandana_movie_info/models/credits.dart';
-import 'package:prandana_movie_info/models/keywords.dart';
-import 'package:prandana_movie_info/models/movie_details.dart';
-import 'package:prandana_movie_info/models/popular_actors.dart';
-import 'package:prandana_movie_info/models/popular_movie_response.dart';
-import 'package:prandana_movie_info/models/videos.dart';
+import 'package:prandana_movie_info/domain/models/credits.dart';
+import 'package:prandana_movie_info/domain/models/keywords.dart';
+import 'package:prandana_movie_info/domain/models/movie_details.dart';
+import 'package:prandana_movie_info/domain/models/popular_actors.dart';
+import 'package:prandana_movie_info/domain/models/popular_movie_response.dart';
+import 'package:prandana_movie_info/domain/models/videos.dart';
 
 class ApiClient {
   static const _host = 'https://api.themoviedb.org/3';

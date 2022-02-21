@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/movie_deails_provider/movie_details_provider.dart';
+import 'package:prandana_movie_info/view_models/movie_deails_provider/movie_details_provider.dart';
 import 'package:provider/src/provider.dart';
 
 class DescriptionWidget extends StatelessWidget {

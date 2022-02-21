@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/models/videos.dart';
+import 'package:prandana_movie_info/domain/models/videos.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class WatchTrailerWidget extends StatefulWidget {

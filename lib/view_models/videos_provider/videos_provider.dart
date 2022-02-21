@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:prandana_movie_info/models/videos.dart';
-import 'package:prandana_movie_info/services/api_client/api_client.dart';
+import 'package:prandana_movie_info/domain/dataproviders/api_client/api_client.dart';
+import 'package:prandana_movie_info/domain/models/videos.dart';
 
 class VideosProvider extends ChangeNotifier {
   final _apiClient = ApiClient();

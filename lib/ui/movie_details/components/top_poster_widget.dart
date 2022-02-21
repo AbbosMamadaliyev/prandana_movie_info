@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/api_client/api_client.dart';
-import 'package:prandana_movie_info/services/movie_deails_provider/movie_details_provider.dart';
+import 'package:prandana_movie_info/domain/dataproviders/api_client/api_client.dart';
 import 'package:prandana_movie_info/ui/movie_details/components/raiting_and_play_button.dart';
+import 'package:prandana_movie_info/view_models/movie_deails_provider/movie_details_provider.dart';
 import 'package:provider/src/provider.dart';
 
 class TopPosterWidget extends StatelessWidget {

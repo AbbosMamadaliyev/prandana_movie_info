@@ -1,10 +1,10 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/services/movie_list_provider/movie_list_provider.dart';
-import 'package:prandana_movie_info/services/popular_actors/popular_actors.dart';
 import 'package:prandana_movie_info/ui/movie_list/components/app_bar.dart';
 import 'package:prandana_movie_info/ui/movie_list/movie_list_widget.dart';
 import 'package:prandana_movie_info/ui/popular_actors/popular_actors_list.dart';
+import 'package:prandana_movie_info/view_models/movie_list_provider/movie_list_provider.dart';
+import 'package:prandana_movie_info/view_models/popular_actors/popular_actors.dart';
 import 'package:provider/src/provider.dart';
 
 class MainScreen extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prandana_movie_info/main_navigation.dart';
-import 'package:prandana_movie_info/services/auth_provider/signout_provider.dart';
+import 'package:prandana_movie_info/view_models/auth_provider/signout_provider.dart';
 import 'package:provider/src/provider.dart';
 
 AppBar customAppBar(BuildContext context) {
