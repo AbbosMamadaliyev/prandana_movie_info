@@ -13,8 +13,8 @@ import 'package:prandana_movie_info/view_models/popular_actors/popular_actors.da
 import 'package:prandana_movie_info/view_models/videos_provider/videos_provider.dart';
 import 'package:provider/provider.dart';
 
+import 'app/my_app.dart';
 import 'domain/models/user.dart';
-import 'my_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
