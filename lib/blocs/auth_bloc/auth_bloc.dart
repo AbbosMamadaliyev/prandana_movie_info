@@ -32,7 +32,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         emit(AuthFailureState(e.toString()));
       }
     });
-
+    // c
     /// user login
     on<AuthLoginEvent>((event, emit) async {
       try {
