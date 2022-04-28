@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:prandana_movie_info/domain/models/user.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
   final _auth = FirebaseAuth.instance;
@@ -34,8 +33,6 @@ class AuthService {
   }
 
   Future logOut() async {
-    SharedPreferences pref = await SharedPreferences.getInstance();
-    pref.setBool('is_login_in', false);
     await _auth.signOut();
   }
 
