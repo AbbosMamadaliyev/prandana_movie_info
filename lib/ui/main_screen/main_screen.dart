@@ -4,8 +4,6 @@ import 'package:prandana_movie_info/ui/movie_list/components/app_bar.dart';
 import 'package:prandana_movie_info/ui/movie_list/movie_list_widget.dart';
 import 'package:prandana_movie_info/ui/popular_actors/popular_actors_list.dart';
 import 'package:prandana_movie_info/view_models/movie_list_provider/movie_list_provider.dart';
-import 'package:prandana_movie_info/view_models/popular_actors/popular_actors.dart';
-import 'package:provider/src/provider.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -23,8 +21,8 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    context.read<MovieListProvider>().setupLocaleAndLoadData(context);
-    context.read<PopularActorsProvider>().setupLocaleAndLoadData(context);
+    // context.read<MovieListProvider>().setupLocaleAndLoadData(context);
+    // context.read<PopularActorsProvider>().setupLocaleAndLoadData(context);
     locale = Localizations.localeOf(context).toLanguageTag();
   }
 

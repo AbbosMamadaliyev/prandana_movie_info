@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:prandana_movie_info/domain/dataproviders/auth_service/auth_service.dart';
-import 'package:prandana_movie_info/domain/models/user.dart';
 import 'package:prandana_movie_info/main_navigation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -31,7 +30,7 @@ class SignInProvider extends ChangeNotifier {
     print('sorov yuborildi: $_isAuthProgress');
     notifyListeners();
 
-    UserModel? userModel = await _authService.signinWithEmailAndPass(
+    final userModel = await _authService.signinWithEmailAndPass(
       email.trim(),
       password.trim(),
     );

@@ -9,6 +9,11 @@ class AuthLogoutEvent extends AuthEvent {
   List<Object?> get props => [];
 }
 
+class AuthInitialEvent extends AuthEvent {
+  @override
+  List<Object?> get props => [];
+}
+
 class AuthCheckStatusEvent extends AuthEvent {
   @override
   List<Object?> get props => [];

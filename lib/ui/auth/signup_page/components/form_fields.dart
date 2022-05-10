@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/view_models/auth_provider/signup_provider.dart';
-import 'package:provider/provider.dart';
 
 import 'create_button.dart';
 import 'custom_container_for_forms.dart';
@@ -17,6 +15,9 @@ class FormFields extends StatefulWidget {
 class _FormFieldsState extends State<FormFields> {
   final _formKey = GlobalKey<FormState>();
   bool _showPassword = false;
+  final passwordController = TextEditingController();
+  final emailController = TextEditingController();
+  final nameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,11 @@ class _FormFieldsState extends State<FormFields> {
           emailFormField(),
           passwordFormField(),
           const ErrorText(),
-          const CreateButton(),
+          CreateButton(
+            email: emailController.text,
+            password: passwordController.text,
+            name: nameController.text,
+          ),
         ],
       ),
     );
@@ -39,7 +44,7 @@ class _FormFieldsState extends State<FormFields> {
       titleForm: 'Пароль',
       child: TextFormField(
         style: const TextStyle(color: Colors.black),
-        controller: context.watch<SignUpProvider>().passwordController,
+        controller: passwordController,
         decoration: customPasswordInputDecoration('Your password'),
         obscureText: !_showPassword,
       ),
@@ -50,7 +55,7 @@ class _FormFieldsState extends State<FormFields> {
     return CustomContainer(
       titleForm: 'Email',
       child: TextFormField(
-        controller: context.watch<SignUpProvider>().emailController,
+        controller: emailController,
         style: const TextStyle(color: Colors.black),
         decoration: customInputDecoration('Your email address'),
       ),
@@ -61,7 +66,7 @@ class _FormFieldsState extends State<FormFields> {
     return CustomContainer(
       titleForm: 'Имя',
       child: TextFormField(
-        controller: context.watch<SignUpProvider>().nameController,
+        controller: nameController,
         style: const TextStyle(color: Colors.black),
         decoration: customInputDecoration('Your name'),
       ),

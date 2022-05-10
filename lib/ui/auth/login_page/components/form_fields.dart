@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prandana_movie_info/view_models/auth_provider/signin_provider.dart';
+import 'package:prandana_movie_info/blocs/auth_bloc/auth_bloc.dart';
 import 'package:provider/src/provider.dart';
 
 import 'create_button.dart';
@@ -17,6 +17,8 @@ class FormFields extends StatefulWidget {
 class _FormFieldsState extends State<FormFields> {
   final _formKey = GlobalKey<FormState>();
   bool _showPassword = false;
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -27,17 +29,22 @@ class _FormFieldsState extends State<FormFields> {
           emailFormField(),
           passwordFormField(),
           const ErrorText(),
-          const LoginButton(),
+          LoginButton(
+            email: emailController.text,
+            password: passwordController.text,
+          ),
         ],
       ),
     );
   }
 
   CustomContainer passwordFormField() {
+    final state = context.watch<AuthBloc>().state;
+
     return CustomContainer(
       titleForm: 'Пароль',
       child: TextFormField(
-        controller: context.watch<SignInProvider>().passwordController,
+        controller: passwordController,
         style: const TextStyle(color: Colors.black),
         validator: (value) {},
         decoration: customPasswordInputDecoration('Your password'),
@@ -51,7 +58,7 @@ class _FormFieldsState extends State<FormFields> {
       titleForm: 'Email',
       child: TextFormField(
         style: const TextStyle(color: Colors.black),
-        controller: context.watch<SignInProvider>().emailController,
+        controller: emailController,
         decoration: customInputDecoration('Your email address'),
       ),
     );
